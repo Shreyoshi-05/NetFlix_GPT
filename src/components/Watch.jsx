@@ -4,7 +4,7 @@ import { options } from "../utils/constants";
 import { FaGamepad } from "react-icons/fa";
 import "../css/Watch.css";
 import useMovieDescription from "../hooks/useMovieDescription";
-import Comment from "./comment";
+import Comment from "./Comment";
 
 const Watch = () => {
   const [key, setKey] = useState(null);
