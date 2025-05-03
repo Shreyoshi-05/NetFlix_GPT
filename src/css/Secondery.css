@@ -1,0 +1,80 @@
+.movie_list_page {
+  padding: 1rem;
+  position: relative;
+  width: 100%;
+}
+
+.movie_list_title {
+  color: white;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.poster_scroll_container {
+  position: relative;
+}
+
+.poster_row {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  padding: 0.5rem 0;
+}
+
+.movie_cart {
+  flex: 0 0 auto;
+  margin-right: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.movie_cart:hover {
+  transform: scale(1.05);
+}
+
+.movie_poster {
+  height: 250px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.arr {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  font-size: 3.5rem;
+  color: white;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.left {
+  left: 0;
+}
+.arr:hover{
+  transform: scale(1.4px);
+  transition: transform 0.3s ease;
+}
+
+
+.right {
+  right: 0;
+}
+
+/* Optional: Hide scrollbars on webkit browsers */
+.poster_row::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .movie_poster {
+    height: 150px;
+  }
+
+  .arr {
+    font-size: 2rem;
+  }
+}
